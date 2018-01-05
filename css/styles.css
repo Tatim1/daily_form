@@ -42,7 +42,7 @@ input {
 	width: 50%;
 	min-width: 100px;
 	max-width: 460px;
-	padding: 30px 26px 60px 26px;
+	padding: 30px 26px 20px 26px;
 	border-radius: 5px;
 	background-color: #ffffff;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -54,9 +54,7 @@ input {
     transform: translate(-50%, -50%);
 }
 
-.form-header__key {
-	float: left;
-}
+
 
 .title {
 	font-family: Arial, sans-serif;
@@ -70,23 +68,23 @@ input {
 	margin-bottom: 16px;
 }
 
-.subtitle {
-	font-family: Arial, sans-serif;
-	font-size: 13px;
-	line-height: 1.54;
-	text-align: left;
-	color: #7a7b7f;
-	clear: both;
-	margin-bottom: 30px;
+.title::before {
+	content: url('../img/key.png'); 
+	padding-right: 5px;
+
 }
 
+.form-name {
+	font-size: 0;
+	width: 100%;	
+}
 
 .form-name__input {
-	width: calc(50% - 8px);
+	width: 49%;
 }
 
 .form-name__input:first-child {
-	margin-right: 12px;
+	margin-right: 2%;
 }
 
 .input-email, .input-password {
@@ -127,9 +125,10 @@ input {
 
 .description {
 	font-family: Arial, sans-serif;
-	margin-top: 25px;
-	font-size: 12px;
-	line-height: 1.67;
+	font-size: 13px;
+	line-height: 1.54;
 	text-align: left;
 	color: #7a7b7f;
+	clear: both;
+	margin-bottom: 30px;
 }
